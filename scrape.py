@@ -7,10 +7,10 @@ Usage:
 
     $ python scrape.py [--outpath] [./your/data/path/file.json]
 
-Example:
+Examples:
 
-    $ python scrape.py
-    $ python scrape.py "~/Desktop/nla-staff-papers.json"
+    $ python scrape.py --silent
+    $ python scrape.py --outpath "~/Desktop/nla-staff-papers.json"
 
 """
 

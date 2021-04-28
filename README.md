@@ -2,7 +2,7 @@
 
 This python script extracts the [NLA Staff Papers list](https://www.nla.gov.au/our-publications/staff-papers) and outputs it as a json file.
 
-It supports both a sensible default (running `./scrape.py` alone), along with custom optional arguments for `--outpath` and `--url`. It's written in a functional style.
+It supports both a sensible default (running `./scrape.py` alone) and custom optional arguments (for `--outpath` and `--url`). It's written in a functional style.
 
 ## Setup
 
@@ -12,15 +12,23 @@ To ensure your python environment meets requirements, run:
 pip install -r requirements.txt
 ```
 
-## Usage
+## Basic Usage
 
-To download, run:
+To download and process the papers, run:
 
 ```sh
 python ./scrape.py
 ```
 
 By default, this will save a datestamped `.json` file into the present directory, and will also echo the results to console.
+
+You can also use a single `make` command to create a `/data/` directory, attempt to meet system requirements, run the scrape, and save resulting `.json` file to `/data/`:
+
+```sh
+make data
+```
+
+## Custom Settings
 
 To silence console output:
 
