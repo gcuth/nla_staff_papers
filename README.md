@@ -22,7 +22,7 @@ python ./scrape.py
 
 By default, this will save a datestamped `.json` file into the present directory, and will also echo the results to console.
 
-You can also use a single `make` command to create a `/data/` directory, attempt to meet system requirements, run the scrape, and save resulting `.json` file to `/data/`:
+You can also use a single `make` command to meet system requirements, run the scrape, and save resulting `.json` file to the current directory:
 
 ```sh
 make data
